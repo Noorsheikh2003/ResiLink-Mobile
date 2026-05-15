@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../resident/resident_dashboard.dart';
-//import 'staff_dashboard.dart';
+//import '../staff/staff_dashboard.dart';
 import 'signup_screen.dart';
 import '../../colors.dart';
 
