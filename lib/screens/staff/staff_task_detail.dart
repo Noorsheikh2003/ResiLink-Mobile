@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'colors.dart';
+import '../../colors.dart';
 
 class StaffTaskDetailScreen extends StatelessWidget {
   final String title;

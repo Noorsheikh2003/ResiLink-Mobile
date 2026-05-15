@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'colors.dart';
-import 'payment_data.dart';
+import '../../colors.dart';
+import '../../payment_data.dart';
 
 class ResidentHistoryScreen extends StatelessWidget {
   const ResidentHistoryScreen({super.key});

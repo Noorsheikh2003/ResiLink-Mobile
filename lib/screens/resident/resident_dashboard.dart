@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:my_resilink/resident_all_complaints.dart';
-import 'package:my_resilink/resident_details.dart';
-import 'package:my_resilink/resident_pay_bill.dart';
-import 'package:my_resilink/resident_new_complaint.dart';
-import 'package:my_resilink/resident_parking.dart';
-import 'package:my_resilink/resident_notices.dart';
-import 'package:my_resilink/resident_history.dart';
-import 'package:my_resilink/resident_alert.dart';
-import 'complaint_data.dart';
-import 'colors.dart';
+import 'package:my_resilink/screens/resident/resident_all_complaints.dart';
+import 'package:my_resilink/screens/resident/resident_details.dart';
+import 'package:my_resilink/screens/resident/resident_pay_bill.dart';
+import 'package:my_resilink/screens/resident/resident_new_complaint.dart';
+import 'package:my_resilink/screens/resident/resident_parking.dart';
+import 'package:my_resilink/screens/resident/resident_notices.dart';
+import 'package:my_resilink/screens/resident/resident_history.dart';
+import 'package:my_resilink/screens/resident/resident_alert.dart';
+import '../../complaint_data.dart';
+import '../../colors.dart';
 import 'dart:io';
-import 'profile_data.dart';
+import '../../profile_data.dart';
 
 class ResidentDashboard extends StatefulWidget {
   const ResidentDashboard({super.key});

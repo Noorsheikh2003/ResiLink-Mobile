@@ -3,7 +3,7 @@ import 'staff_tasks.dart';
 import 'staff_task_data.dart';
 import 'staff_alert.dart';
 import 'staff_details.dart';
-import 'colors.dart';
+import '../../colors.dart';
 
 class StaffDashboard extends StatefulWidget {
   const StaffDashboard({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'staff_task_detail.dart';
 import 'staff_task_data.dart';
-import 'colors.dart';
+import '../../colors.dart';
 
 class StaffTasksScreen extends StatefulWidget {
   const StaffTasksScreen({super.key});

@@ -2,34 +2,34 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
-import 'colors.dart';
-import 'profile_data.dart';
+import '../../colors.dart';
+import '../../profile_data.dart';
 
-class ResidentDetailsScreen extends StatefulWidget {
+class StaffDetailsScreen extends StatefulWidget {
   final String currentName;
 
-  const ResidentDetailsScreen({super.key, required this.currentName});
+  const StaffDetailsScreen({super.key, required this.currentName});
 
   @override
-  State<ResidentDetailsScreen> createState() => _ResidentDetailsScreenState();
+  State<StaffDetailsScreen> createState() => _StaffDetailsScreenState();
 }
 
-class _ResidentDetailsScreenState extends State<ResidentDetailsScreen> {
+class _StaffDetailsScreenState extends State<StaffDetailsScreen> {
   bool isEditing = false;
 
   late TextEditingController nameController;
   late String updatedName;
 
+  final TextEditingController staffIdController =
+      TextEditingController(text: "STID-001");
+  final TextEditingController professionController =
+      TextEditingController(text: "Electrician");
   final TextEditingController cnicController =
       TextEditingController(text: "4210112345671");
   final TextEditingController phoneController =
       TextEditingController(text: "03001234567");
   final TextEditingController emailController =
-      TextEditingController(text: "example@email.com");
-  final TextEditingController flatController =
-      TextEditingController(text: "A-302");
-  final TextEditingController buildingController =
-      TextEditingController(text: "Al-Noor Residency");
+      TextEditingController(text: "staff@email.com");
 
   @override
   void initState() {
@@ -84,38 +84,36 @@ class _ResidentDetailsScreenState extends State<ResidentDetailsScreen> {
                   radius: 70,
                   backgroundColor: Colors.grey[300],
                   child: ClipOval(
-                  child: ProfileData.imagePath != null
-                      ? Image.file(File(ProfileData.imagePath!),
-                     width: 100,
-                    height: 100,
-                    fit: BoxFit.cover,
-                  )
-                      : const Icon(Icons.camera_alt, size: 40, color:AppColors.primaryBlue)
-                      
+                    child: ProfileData.imagePath != null
+                        ? Image.file(
+                            File(ProfileData.imagePath!),
+                            width: 100,
+                            height: 100,
+                            fit: BoxFit.cover,
+                          )
+                        : const Icon(Icons.camera_alt,
+                            size: 40, color: AppColors.primaryBlue),
+                  ),
                 ),
               ),
-            ),
 
               const SizedBox(height: 10),
 
-              const Text(
-                "Tap to upload Image",
-                style: TextStyle(color: Colors.black),
-              ),
+              const Text("Tap to upload Image"),
 
               const SizedBox(height: 20),
 
-              // ✏️ FIELDS
+              // 🔹 FIELDS
               inputField(Icons.person, "Name", nameController),
+              inputField(Icons.badge, "Staff ID", staffIdController),
+              inputField(Icons.work, "Profession", professionController),
               inputField(Icons.credit_card, "CNIC", cnicController, maxLength: 13),
               inputField(Icons.phone, "Phone", phoneController, maxLength: 11),
-              inputField(Icons.email, "Email Address", emailController),
-              inputField(Icons.home, "Flat No", flatController),
-              inputField(Icons.apartment, "Building Name", buildingController),
+              inputField(Icons.email, "Email", emailController),
 
               const SizedBox(height: 20),
 
-              // 🔘 ACTION BUTTONS
+              // 🔘 BUTTONS
               Row(
                 children: [
 
@@ -126,8 +124,6 @@ class _ResidentDetailsScreenState extends State<ResidentDetailsScreen> {
                         setState(() {
                           isEditing = false;
                           updatedName = nameController.text;
-                          ProfileData.name = nameController.text;
-                          ProfileData.flatNo = flatController.text;
                         });
                       },
                       icon: const Icon(Icons.save),
@@ -135,7 +131,6 @@ class _ResidentDetailsScreenState extends State<ResidentDetailsScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         foregroundColor: AppColors.primaryBlue,
-                        padding: const EdgeInsets.all(14),
                       ),
                     ),
                   ),
@@ -153,14 +148,13 @@ class _ResidentDetailsScreenState extends State<ResidentDetailsScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         foregroundColor: AppColors.primaryBlue,
-                        padding: const EdgeInsets.all(14),
                       ),
                     ),
                   ),
 
                   const SizedBox(width: 8),
 
-                  //  DELETE
+                  // 🗑 DELETE
                   Expanded(
                     child: ElevatedButton.icon(
                       onPressed: () {},
@@ -169,7 +163,6 @@ class _ResidentDetailsScreenState extends State<ResidentDetailsScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey[300],
                         foregroundColor: AppColors.primaryBlue,
-                        padding: const EdgeInsets.all(14),
                       ),
                     ),
                   ),

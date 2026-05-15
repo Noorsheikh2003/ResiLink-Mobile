@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'resident_dashboard.dart';
+import '../resident/resident_dashboard.dart';
 //import 'staff_dashboard.dart';
 import 'signup_screen.dart';
-import 'colors.dart';
+import '../../colors.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

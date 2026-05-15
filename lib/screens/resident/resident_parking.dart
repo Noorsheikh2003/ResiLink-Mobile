@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'resident_parking_report.dart';
-import 'profile_data.dart';
-import 'parking_data.dart';
-import 'colors.dart';
+import '../../profile_data.dart';
+import '../../parking_data.dart';
+import '../../colors.dart';
 
 class ResidentParkingScreen extends StatelessWidget {
   const ResidentParkingScreen({super.key});

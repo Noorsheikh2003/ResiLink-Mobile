@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'colors.dart';
+import '../../colors.dart';
 
 class ResidentNoticesScreen extends StatefulWidget {
   const ResidentNoticesScreen({super.key});
