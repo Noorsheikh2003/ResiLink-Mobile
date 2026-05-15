@@ -7,10 +7,10 @@ import 'package:my_resilink/screens/resident/resident_parking.dart';
 import 'package:my_resilink/screens/resident/resident_notices.dart';
 import 'package:my_resilink/screens/resident/resident_history.dart';
 import 'package:my_resilink/screens/resident/resident_alert.dart';
-import '../../complaint_data.dart';
-import '../../colors.dart';
+import '../../models/complaint_data.dart';
+import '../../utils/colors.dart';
 import 'dart:io';
-import '../../profile_data.dart';
+import '../../models/profile_data.dart';
 
 class ResidentDashboard extends StatefulWidget {
   const ResidentDashboard({super.key});

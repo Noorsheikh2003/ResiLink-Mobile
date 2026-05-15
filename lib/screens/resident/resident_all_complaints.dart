@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../colors.dart';
-import '../../complaint_data.dart';
+import '../../utils/colors.dart';
+import '../../models/complaint_data.dart';
 
 class ResidentAllComplaintsScreen extends StatefulWidget {
   const ResidentAllComplaintsScreen({super.key});

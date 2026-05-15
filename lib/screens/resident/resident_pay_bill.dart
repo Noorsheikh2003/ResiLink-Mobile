@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
-import '../../payment_data.dart';
-import '../../colors.dart';
+import '../../models/payment_data.dart';
+import '../../utils/colors.dart';
 
 class ResidentPayBillScreen extends StatefulWidget {
   const ResidentPayBillScreen({super.key});

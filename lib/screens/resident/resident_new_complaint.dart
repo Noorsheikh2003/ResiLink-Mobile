@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
-import '../../colors.dart';
-import '../../complaint_data.dart';
+import '../../utils/colors.dart';
+import '../../models/complaint_data.dart';
 
 class ResidentNewComplaintScreen extends StatefulWidget {
   const ResidentNewComplaintScreen({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'staff_dashboard.dart';
 //import 'resident_dashboard.dart';
-import 'complaint_data.dart';
+import 'models/complaint_data.dart';
 import 'screens/auth/splash_screen.dart';
 
 const Color primaryBlue = Color(0xFF00129C); //  global color

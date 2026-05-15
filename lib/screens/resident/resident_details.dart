@@ -2,8 +2,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
-import '../../colors.dart';
-import '../../profile_data.dart';
+import '../../utils/colors.dart';
+import '../../models/profile_data.dart';
 
 class ResidentDetailsScreen extends StatefulWidget {
   final String currentName;
